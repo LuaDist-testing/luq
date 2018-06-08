@@ -1,18 +1,10 @@
--- This file was automatically generated for the LuaDist project.
-
 package = "luq"
-version = "0.1.1-1"
+version = "0.1.2-1"
 
--- LuaDist source
 source = {
-  tag = "0.1.1-1",
-  url = "git://github.com/LuaDist-testing/luq.git"
+  url = "https://github.com/moteus/lua-luq/archive/v0.1.2.zip",
+  dir = "lua-luq-0.1.2",
 }
--- Original source
--- source = {
---   url = "https://github.com/moteus/lua-luq/archive/v0.1.1.zip",
---   dir = "lua-luq-0.1.1",
--- }
 
 description = {
   summary = "Lua light userdata queue",
@@ -21,7 +13,7 @@ description = {
 }
 
 dependencies = {
-  "lua >= 5.1, < 5.3",
+  "lua >= 5.1, < 5.4",
 }
 
 build = {
@@ -52,4 +44,5 @@ build = {
     },
   },
 }
+
 

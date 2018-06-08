@@ -1,10 +1,18 @@
-package = "luq"
-version = "scm-0"
+-- This file was automatically generated for the LuaDist project.
 
+package = "luq"
+version = "0.1.2-1"
+
+-- LuaDist source
 source = {
-  url = "https://github.com/moteus/lua-luq/archive/master.zip",
-  dir = "lua-luq-master",
+  tag = "0.1.2-1",
+  url = "git://github.com/LuaDist-testing/luq.git"
 }
+-- Original source
+-- source = {
+--   url = "https://github.com/moteus/lua-luq/archive/v0.1.2.zip",
+--   dir = "lua-luq-0.1.2",
+-- }
 
 description = {
   summary = "Lua light userdata queue",
@@ -33,13 +41,6 @@ build = {
         libraries = {"pthread"},
       }
     }},
-
-    -- mingw32  = { modules = {
-    --   ["lzmq.pool.core"] = {
-    --     libraries = {"pthread"},
-    --     defines   = {"USE_PTHREAD"},
-    --   }
-    -- }},
   },
 
   modules = {
@@ -51,5 +52,4 @@ build = {
     },
   },
 }
-
 
