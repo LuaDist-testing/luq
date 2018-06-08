@@ -1,9 +1,9 @@
 package = "luq"
-version = "scm-0"
+version = "0.1.1-1"
 
 source = {
-  url = "https://github.com/moteus/lua-luq/archive/master.zip",
-  dir = "lua-luq-master",
+  url = "https://github.com/moteus/lua-luq/archive/v0.1.1.zip",
+  dir = "lua-luq-0.1.1",
 }
 
 description = {
@@ -33,13 +33,6 @@ build = {
         libraries = {"pthread"},
       }
     }},
-
-    -- mingw32  = { modules = {
-    --   ["lzmq.pool.core"] = {
-    --     libraries = {"pthread"},
-    --     defines   = {"USE_PTHREAD"},
-    --   }
-    -- }},
   },
 
   modules = {

@@ -1,17 +1,17 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "luq"
-version = "0.1.0-1"
+version = "0.1.1-1"
 
 -- LuaDist source
 source = {
-  tag = "0.1.0-1",
+  tag = "0.1.1-1",
   url = "git://github.com/LuaDist-testing/luq.git"
 }
 -- Original source
 -- source = {
---   url = "https://github.com/moteus/lua-luq/archive/v0.1.0.zip",
---   dir = "lua-luq-0.1.0",
+--   url = "https://github.com/moteus/lua-luq/archive/v0.1.1.zip",
+--   dir = "lua-luq-0.1.1",
 -- }
 
 description = {
@@ -30,9 +30,15 @@ build = {
   type = "builtin",
 
   platforms = {
-    unix    = { modules = {
+    linux    = { modules = {
       ["luq"] = {
         libraries = {"pthread", "rt"},
+      }
+    }},
+
+    unix     = { modules = {
+      ["luq"] = {
+        libraries = {"pthread"},
       }
     }},
   },
